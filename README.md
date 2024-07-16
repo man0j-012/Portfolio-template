@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Portfolio Template
 
 This is a simple GitHub portfolio template. You can use this template to create your own portfolio by following the instructions below.
