@@ -9,27 +9,22 @@ document.querySelectorAll("nav ul li a").forEach((anchor) => {
   });
 });
 
-// Console message when the page is fully loaded
-window.addEventListener("load", () => {
-  console.log("Page fully loaded");
-  displayGreeting();
-});
+// Add fadeIn animation to sections when they are scrolled into view
+const sections = document.querySelectorAll(".section");
 
-// Function to display a dynamic greeting message based on the time of day
-function displayGreeting() {
-  const greetingElement = document.createElement("p");
-  greetingElement.className = "greeting";
-  const currentHour = new Date().getHours();
-  let greetingMessage;
-
-  if (currentHour < 12) {
-    greetingMessage = "Good morning!";
-  } else if (currentHour < 18) {
-    greetingMessage = "Good afternoon!";
-  } else {
-    greetingMessage = "Good evening!";
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__fadeIn");
+      }
+    });
+  },
+  {
+    threshold: 0.1,
   }
+);
 
-  greetingElement.textContent = greetingMessage;
-  document.body.prepend(greetingElement);
-}
+sections.forEach((section) => {
+  observer.observe(section);
+});
