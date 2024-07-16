@@ -18,6 +18,7 @@ window.addEventListener("load", () => {
 // Function to display a dynamic greeting message based on the time of day
 function displayGreeting() {
   const greetingElement = document.createElement("p");
+  greetingElement.className = "greeting";
   const currentHour = new Date().getHours();
   let greetingMessage;
 
@@ -32,14 +33,3 @@ function displayGreeting() {
   greetingElement.textContent = greetingMessage;
   document.body.prepend(greetingElement);
 }
-
-// Example of adding an interactive button (optional)
-// This is just an example of how you can add more interactivity to your portfolio
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.createElement("button");
-  button.textContent = "Click me!";
-  button.addEventListener("click", () => {
-    alert("Button clicked!");
-  });
-  document.body.appendChild(button);
-});
