@@ -1,5 +1,3 @@
-/* main.js */
-
 $(document).ready(function () {
   // Flexslider
   $(".flexslider").flexslider({

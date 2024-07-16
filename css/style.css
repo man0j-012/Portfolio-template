@@ -1,8 +1,6 @@
-/* style.css */
-
 /* General Styles */
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background: #fff;
   color: #333;
   margin: 0;
@@ -45,7 +43,7 @@ body {
 
 #colorlib-logo {
   margin: 20px 0;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
   font-weight: 700;
 }
@@ -77,8 +75,7 @@ body {
   transition: background 0.3s;
 }
 
-#colorlib-main-menu ul li a:hover,
-#colorlib-main-menu ul li.active a {
+#colorlib-main-menu ul li a:hover, #colorlib-main-menu ul li.active a {
   background: #3498db;
   color: #fff;
 }
@@ -127,173 +124,3 @@ section {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
-  font-family: "Playfair Display", serif;
-}
-
-.about-desc {
-  margin-bottom: 40px;
-}
-
-.about-desc p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-/* Interests */
-.colorlib-services .services {
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.colorlib-services .services:hover {
-  transform: translateY(-10px);
-}
-
-.colorlib-services .icon {
-  font-size: 40px;
-  color: #3498db;
-  margin-bottom: 20px;
-}
-
-.colorlib-services .desc {
-  font-size: 16px;
-}
-
-/* Skills */
-.colorlib-skills ul {
-  padding-left: 20px;
-}
-
-.colorlib-skills ul li {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Education */
-.colorlib-education .panel-title a {
-  font-size: 18px;
-  display: block;
-  padding: 10px 20px;
-  background: #3498db;
-  color: #fff;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.colorlib-education .panel-title a:hover {
-  background: #2980b9;
-}
-
-.colorlib-education .panel-body {
-  background: #fff;
-  padding: 20px;
-}
-
-/* Projects */
-.colorlib-work .project {
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.colorlib-work .desc {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 20px;
-  transition: transform 0.3s;
-}
-
-.colorlib-work .desc:hover {
-  transform: translateY(-10px);
-}
-
-.colorlib-work .con {
-  font-size: 16px;
-}
-
-.colorlib-work .con a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.colorlib-work .con a:hover {
-  text-decoration: underline;
-}
-
-/* Blog */
-.colorlib-blog .blog-entry {
-  margin-bottom: 30px;
-}
-
-.colorlib-blog .blog-entry .blog-img {
-  overflow: hidden;
-}
-
-.colorlib-blog .blog-entry .blog-img img {
-  transition: transform 0.3s;
-}
-
-.colorlib-blog .blog-entry .blog-img:hover img {
-  transform: scale(1.1);
-}
-
-.colorlib-blog .desc {
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
-
-.colorlib-blog .desc h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.colorlib-blog .desc h3 a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.colorlib-blog .desc h3 a:hover {
-  text-decoration: underline;
-}
-
-.colorlib-blog .desc p {
-  font-size: 14px;
-  color: #777;
-}
-
-/* Contact */
-.colorlib-contact .colorlib-feature {
-  margin-bottom: 30px;
-}
-
-.colorlib-contact .colorlib-feature .colorlib-icon {
-  font-size: 20px;
-  color: #3498db;
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.colorlib-contact .colorlib-feature .colorlib-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.colorlib-contact .colorlib-text a {
-  color: #333;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.colorlib-contact .colorlib-text a:hover {
-  color: #3498db;
-}
